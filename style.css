@@ -1,0 +1,512 @@
+/* ==========================================================================
+Définition des polices personnalisées
+========================================================================== */
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/Roboto-Regular-webfont.eot');
+    src: url('fonts/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Regular-webfont.woff') format('woff'),
+         url('fonts/Roboto-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('fonts/Roboto-Medium-webfont.eot');
+    src: url('fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Medium-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Medium-webfont.woff') format('woff'),
+         url('fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('fonts/Roboto-Bold-webfont.eot');
+    src: url('fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roboto-Bold-webfont.woff2') format('woff2'),
+         url('fonts/Roboto-Bold-webfont.woff') format('woff'),
+         url('fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ==========================================================================
+Eléments principaux de la page
+========================================================================== */
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+    font-family: 'robotomedium', Arial, sans-serif;
+    background-color: white;
+}
+
+p
+{
+	font-size: 0.9em;
+	color: #777777;
+}
+
+h1
+{
+	font-family: 'robotobold', Arial, sans-serif;
+	font-size: 2.2em;
+	color: #ffffff;
+}
+
+h2
+{
+	font-family: 'robotobold', Arial, sans-serif;
+	font-size: 3em;
+	color: #272727;
+	margin-bottom: 20px;
+}
+
+h3
+{
+	font-size: 1.4em;
+	color: #272727;
+}
+
+.icone_separation
+{
+	position: relative;
+	width: 160px;
+	height: 15px;
+	margin: auto;
+	color: #5CADD3;
+	border-top: 2px solid #ECECEC;
+}
+
+.icone_separation .fa-circle
+{
+	position: absolute;
+	margin-top: -13px;
+	margin-left: -10px;
+	border: 5px solid #ffffff;
+	border-radius: 50%;
+}
+
+/* ==========================================================================
+Header
+========================================================================== */
+#header
+{
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+    width: 100%;
+	background-color: white;
+}
+
+#header_content
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1170px;
+	padding: 15px 0;
+}
+
+#menu ul
+{
+	display: flex;
+	list-style: none;
+}
+
+#menu a
+{
+	color: #777777;
+	font-size: 1em;
+	margin-right: 25px;
+	text-decoration: none;
+	padding-top: 25px;
+}
+
+#menu a:hover
+{
+	color: #636363;
+	border-top: 3px solid #5CADD3;
+}
+
+/* ==========================================================================
+Bannière
+========================================================================== */
+#slider
+{
+	position: relative;
+	margin-top: 92px;
+	width: 100%;
+	height: 550px;
+	overflow: hidden;
+}
+
+#slider-bg
+{
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200%;
+	transition: left 2s;
+}
+
+#slider:target #slider-bg
+{
+	left: -1600px;
+}
+
+#slider-text
+{
+	position: absolute;
+	padding-top: 150px;
+	padding-left: 200px;
+	max-width: 600px;
+}
+
+#slider-text p
+{
+	color: #ffffff;
+	margin-bottom: 30px;
+}
+
+#slider .fa-angle-left
+{
+	position: absolute;
+	top: 200px;
+	left: 0px;
+	width: 15px;
+	height: 30px;
+	padding: 30px 30px 30px 15px;
+	border-top-right-radius: 120px; 
+	border-bottom-right-radius: 120px;
+	color: #ffffff;
+	background: rgba(77,77,77,0.9);
+}
+
+#slider .fa-angle-right
+{
+	position: absolute;
+	top: 200px;
+	right: 0px;
+	width: 15px;
+	height: 30px;
+	padding: 30px 15px 30px 30px;
+	border-top-left-radius: 120px; 
+	border-bottom-left-radius: 120px;
+	color: #ffffff;
+	background: rgba(77,77,77,0.9);
+}
+
+.text-blue
+{
+	color: #5CADD3;
+}
+
+.btn
+{
+	background-color: #5CADD3;
+	color: #ffffff;
+	font-size: 1.0em;
+	font-weight: bold;
+	border: 0;
+  	border-radius: 2px;
+	padding: 10px 10px;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	border-bottom: 2px solid #468CAD;
+}
+
+.btn:hover 
+{
+    background-color: #468CAD;
+	color: #ffffff;   
+}
+
+/* ==========================================================================
+Nos services
+========================================================================== */
+#services
+{
+	margin: 0 auto;
+	max-width: 1170px;
+	padding-top: 90px;
+	padding-bottom: 90px;
+}
+
+#services_titre
+{
+	text-align: center;
+}
+
+#services_bloc
+{
+	display: flex;
+}
+
+#services_img
+{
+	flex: 1;
+}
+
+#services_contenu
+{
+	flex: 1;
+}
+
+#ux_design
+{
+	display: flex;
+	margin-top: 30px;
+}
+
+#ui_design
+{
+	display: flex;
+	margin-top: 30px;
+}
+
+#seo
+{
+	display: flex;
+	margin-top: 30px;
+}
+
+.services_icone
+{
+	width: 140px;
+	height: 70px;
+	color: #5CADD3;
+	display: flex;
+	margin: 0px 15px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.services_icone .fa-chart-line
+{
+	border: 3px solid #ECECEC;
+	border-radius: 50%;
+	padding : 20px;
+}
+
+.services_icone .fa-cubes
+{
+	border: 3px solid #ECECEC;
+	border-radius: 50%;
+	padding : 20px;
+}
+
+.services_icone .fa-chart-pie
+{
+	border: 3px solid #ECECEC;
+	border-radius: 50%;
+	padding : 20px;
+}
+
+.services_icone .fa-circle
+{
+	margin-left: -15px;
+	border: 5px solid #ffffff;
+}
+
+/* ==========================================================================
+Nos projets
+========================================================================== */
+#portfolio
+{
+	padding-top: 90px;
+	padding-bottom: 90px;
+  	background-color: #F5F5F5;
+  	text-align: center;
+}
+
+#portfolio p
+{
+	margin-bottom: 40px;
+}
+
+label 
+{
+  	
+  	cursor: pointer;
+  	color: #777777;
+  	background-color: #E5E5E5;
+  	margin: 0px -2px 30px -2px;
+  	padding: 12px 15px;
+  	font-size: 1em;
+  	position: relative;
+}
+
+label:hover
+{
+  	color: #ffffff;
+  	background-color: #5CADD3;
+  	border-bottom: 3px solid #468CAD;
+}
+
+label:after
+{
+  	content: "";
+  	height: 0;
+  	width: 0;
+  	border-left: 10px solid transparent;
+  	border-right: 10px solid transparent;
+  	border-top: 10px solid #468CAD;
+  	position: absolute;
+  	opacity: 0;
+  	left: 40%;
+  	bottom: -12px;
+}
+
+label:hover:after
+{
+  	opacity: 1;
+}
+
+.border-radius-left
+{
+  	border-radius: 5px 0 0 5px;
+}
+
+.border-radius-right
+{
+  	border-radius: 0 5px 5px 0;
+}
+
+#portfolio ul.galerie li 
+{
+  	display: inline-block;
+  	opacity: 1;
+}
+
+#portfolio input
+{
+  	display: none;
+}
+
+/*Selection catégorie*/	
+input#select-creative:checked ~ .galerie li:not(.creative), input#select-corporate:checked ~ .galerie li:not(.corporate), input#select-portfolio:checked ~ .galerie li:not(.portfolio) 
+{
+  	opacity: 0.1;
+}
+
+figure
+{
+  	position: relative;
+}
+
+#portfolio ul
+{
+	max-width: 1170px;
+	margin: 50px auto;
+}
+
+#portfolio ul img
+{
+	width: 225px;
+  	height: 150px;	
+}
+
+#portfolio li
+{
+  	padding: 10px;
+}
+
+figcaption
+{
+    position: absolute;
+    background: rgba(25, 25, 25, 0.8);
+    width: 100%;
+    height: 40%;
+    bottom: 4px;
+    opacity: 0;
+}
+
+figcaption .fa-eye
+{
+	position: absolute;
+	color: #ffffff;
+	border: 2px solid #ffffff;
+	background-color: #5CADD3;
+	border-radius: 50%;
+	padding: 8px;
+	margin-top: -16px;
+	margin-left: 65px;
+}
+
+figcaption p, h4
+{
+    color: #ffffff;
+    text-align: left;
+    margin-left: 10px;
+}
+
+figcaption h4
+{
+	font-size: 1.0em;
+	margin-top: 10px;
+}
+
+figcaption:hover
+{
+	opacity: 1;
+}
+
+/* ==========================================================================
+Contact
+========================================================================== */
+#contact
+{
+	padding-top: 90px;
+	justify-content: center;
+	position: relative;	
+}
+
+#formulaire
+{
+	position: absolute;
+	top: 25%;
+	left: 60%;
+}
+
+form
+{
+  	width: 300px;
+  	background-color: rgba(92, 173, 211, 0.9);
+  	padding: 10px 20px;
+}
+
+input[type=text], [type=email], textarea
+{
+	width: 100%;
+  	padding: 10px;
+  	margin: 10px 0;
+  	border: 1px solid #777777;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+}
+
+input[type=submit] 
+{
+  	background-color: #5CADD3;
+  	color: #ffffff;
+  	padding: 10px;
+  	margin: 10px 0;
+  	border-bottom: 3px solid #468CAD;
+  	border-radius: 4px;
+  	cursor: pointer;
+}
