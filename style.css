@@ -40,41 +40,35 @@ Définition des polices personnalisées
 /* ==========================================================================
 Eléments principaux de la page
 ========================================================================== */
-*
-{
+* {
 	margin: 0;
 	padding: 0;
 }
 
-body
-{
+body {
     font-family: 'robotomedium', Arial, sans-serif;
     background-color: white;
 }
 
-p
-{
+p {
 	font-size: 0.9em;
 	color: #777777;
 }
 
-h1
-{
+h1 {
 	font-family: 'robotobold', Arial, sans-serif;
 	font-size: 2.2em;
 	color: #ffffff;
 }
 
-h2
-{
+h2 {
 	font-family: 'robotobold', Arial, sans-serif;
 	font-size: 3em;
 	color: #272727;
 	margin-bottom: 20px;
 }
 
-h3
-{
+h3 {
 	font-size: 1.4em;
 	color: #272727;
 }
@@ -95,15 +89,17 @@ h4 {
 
 .button {
 	color: #ffffff;
-	background-color: #5CADD3;
+	font-family: 'robotobold', Arial, sans-serif;
 	font-size: 1.0em;
+	background-color: #5CADD3;	
 	border: none;
   	border-radius: 2px;
 	padding: 10px 15px;
 	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;
-	border-bottom: 3px solid #468CAD;
+	border-bottom: 4px solid #468CAD;
+	cursor: pointer;
 }
 
 .button:hover {
@@ -111,8 +107,7 @@ h4 {
 	color: #ffffff;   
 }
 
-.separator
-{
+.separator {
 	position: relative;
 	width: 160px;
 	height: 15px;
@@ -121,16 +116,13 @@ h4 {
 	border-top: 2px solid #ECECEC;
 }
 
-.separator__icon
-{
+.separator__icon {
 	position: absolute;
 	margin-top: -13px;
 	margin-left: -10px;
 	border: 5px solid #ffffff;
 	border-radius: 50%;
 }
-
-
 
 /* ==========================================================================
 Header
@@ -162,12 +154,12 @@ Header
 	font-size: 1em;
 	margin-right: 25px;
 	text-decoration: none;
-	padding-top: 25px;
+	padding-top: 32px;
 }
 
 .menu__link:hover {
 	color: #636363;
-	border-top: 3px solid #5CADD3;
+	border-top: 4px solid #5CADD3;
 }
 
 /* ==========================================================================
@@ -175,6 +167,8 @@ Bannière
 ========================================================================== */
 #slider {
 	position: relative;
+	display: flex;
+	justify-content: space-between;
 	width: 100%;
 	height: 550px;
 	overflow: hidden;
@@ -196,97 +190,99 @@ Bannière
 
 .slider__text {
 	position: absolute;
-	padding-top: 150px;
-	padding-left: 200px;
 	max-width: 600px;
+	padding-top: 10%;
+	padding-left: 10%;
 }
 
-#slider-text p
-{
+.slider__text_blue {
+	color: #5CADD3;
+}
+
+.slider__text_white {
 	color: #ffffff;
-	margin-bottom: 30px;
+}
+
+.slider__button {
+	position: absolute;
+	margin-top: 20px;
+}
+
+.chevron-left {
+	position: relative;
+	width: 30px;
+	height: 60px;	
+	background: rgba(0, 0, 0, 0.2);
+	border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+	top: 50%;
+ 	transform: translate(0, -50%);
 }
 
 .fa-chevron-left {
 	position: absolute;
-	top: 45%;
-	left: 0px;
-	width: 15px;
-	height: 30px;
-	padding: 30px 30px 30px 15px;
-	border-top-right-radius: 120px; 
-	border-bottom-right-radius: 120px;
 	color: #ffffff;
-	background: rgba(77,77,77,0.9);
+	padding-top: 20px;
+	padding-left: 8px;
+}
+
+.chevron-right {
+	position: relative;
+	width: 30px;
+	height: 60px;	
+	background: rgba(0, 0, 0, 0.2);
+	border-top-left-radius: 30px; 
+	border-bottom-left-radius: 30px;
+ 	top: 50%;
+ 	transform: translate(0, -50%);
 }
 
 .fa-chevron-right {
 	position: absolute;
-	top: 45%;
-	right: 0px;
-	width: 15px;
-	height: 30px;
-	padding: 30px 15px 30px 30px;
-	border-top-left-radius: 120px; 
-	border-bottom-left-radius: 120px;
 	color: #ffffff;
-	background: rgba(77,77,77,0.9);
+	padding-top: 20px;
+	padding-left: 8px;
 }
-
-.text-blue
-{
-	color: #5CADD3;
-}
-
 
 /* ==========================================================================
 Nos services
 ========================================================================== */
-#services
-{
-	max-width: 1170px;
+#services {
+	max-width: 1200px;
 }
 
-#services_titre
-{
+.services__title {
 	text-align: center;
 }
 
-#services_bloc
-{
+.services__block {
 	display: flex;
 }
 
-#services_img
-{
+.services__image {
 	flex: 1;
 }
 
-#services_contenu
-{
+.services__content {
 	flex: 1;
 }
 
-#ux_design
-{
+.services__content_ux-design {
 	display: flex;
 	margin-top: 30px;
 }
 
-#ui_design
-{
+.services__content_ui-design {
 	display: flex;
 	margin-top: 30px;
 }
 
-#seo
-{
+.services__content_seo {
 	display: flex;
 	margin-top: 30px;
 }
 
-.services_icone
-{
+.services__icon {
 	width: 140px;
 	height: 70px;
 	color: #5CADD3;
@@ -296,29 +292,25 @@ Nos services
 	align-items: center;
 }
 
-.services_icone .fa-chart-line
-{
+.fa-chart-line {
 	border: 3px solid #ECECEC;
 	border-radius: 50%;
 	padding : 20px;
 }
 
-.services_icone .fa-cubes
-{
+.fa-cubes {
 	border: 3px solid #ECECEC;
 	border-radius: 50%;
 	padding : 20px;
 }
 
-.services_icone .fa-chart-pie
-{
+.fa-chart-pie {
 	border: 3px solid #ECECEC;
 	border-radius: 50%;
 	padding : 20px;
 }
 
-.services_icone .fa-circle
-{
+.fa-circle {
 	margin-left: -15px;
 	border: 5px solid #ffffff;
 }
@@ -326,8 +318,7 @@ Nos services
 /* ==========================================================================
 Nos projets
 ========================================================================== */
-#projets
-{
+#projets {
   	background-color: #F5F5F5;
   	text-align: center;
 }
@@ -432,8 +423,7 @@ input#select-creative:checked ~ .projets__items li:not(.creative), input#select-
 	margin-left: 65px;
 }
 
-figcaption p
-{
+.projets__figcaption_text-white {
     color: #ffffff;
     text-align: left;
     margin-left: 10px;
@@ -442,27 +432,29 @@ figcaption p
 /* ==========================================================================
 Contact
 ========================================================================== */
-#contact
-{
-	justify-content: center;
-	position: relative;	
-}
-
-#formulaire
-{
+.contact__background {
 	position: absolute;
-	top: 25%;
+	width: 100%;
+	height: 600px;
+	background: #5CADD3;
+}
+
+.contact__iframe {
+	position: relative;
+	opacity: 0.6;
+}
+
+.contact__form {
+	position: absolute;
+	top: 50%;
 	left: 60%;
-}
-
-form
-{
+	transform: translate(0, -50%);
   	width: 300px;
-  	background-color: rgba(92, 173, 211, 0.9);
-  	padding: 10px 20px;
+  	background-color: rgba(242, 246, 248);
+  	padding: 10px 15px;
 }
 
-input[type=text], [type=email], textarea
+.input
 {
 	width: 100%;
   	padding: 10px;
@@ -472,13 +464,10 @@ input[type=text], [type=email], textarea
   	box-sizing: border-box;
 }
 
-input[type=submit] 
-{
-  	background-color: #5CADD3;
-  	color: #ffffff;
-  	padding: 10px;
-  	margin: 10px 0;
-  	border-bottom: 3px solid #468CAD;
-  	border-radius: 4px;
-  	cursor: pointer;
+.contact__text_bold {
+	font-weight: bold;
+}
+
+.contact__text_underline {
+	text-decoration: underline dotted;
 }
