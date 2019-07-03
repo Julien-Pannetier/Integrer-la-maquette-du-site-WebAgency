@@ -39,20 +39,24 @@
                  	</div>
               	</div>
               	<div class="slider__text">
-                 	<h1><span class="text-blue">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
+                 	<h1><span class="slider__text_blue">WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS !</h1>
                  	<p>
-                 		Vous avez un projet web ? La WebAgency vous aide à le réaliser !
+                 		<span class="slider__text_white">Vous avez un projet web ? La WebAgency vous aide à le réaliser !</span> 
                  	</p>
-                 	<a class="button" href="#contact">Plus d'infos</a>
+                    <a class="button slider__button" href="#contact">Plus d'infos</a>
               	</div>
-                <a href="#slider__background"><i class="fas fa-chevron-left fa-2x"></i></a>
-                <a href="#slider"><i class="fas fa-chevron-right fa-2x"></i></a>
+                <div class="chevron-left">
+                    <a href="#slider__background"><i class="fas fa-chevron-left"></i></a>
+                </div>
+                <div class="chevron-right">
+                    <a href="#slider"><i class="fas fa-chevron-right"></i></a>
+                </div>
             </div>  
         </section>
 
          <!-- Section 2 Nos services -->
         <section class="custom-section" id="services">
-           	<div id="services_titre">
+           	<div class="services__title">
               	<h2>NOS SERVICES</h2>
               	<div class="separator">
                  	<i class="separator__icon fas fa-circle"></i>
@@ -61,19 +65,19 @@
               		lorem ipsum
               	</p>
            	</div>
-           	<div id="services_bloc">
-              	<div id="services_img">
+           	<div class="services__block">
+              	<div class="services__image">
                  	<img src="images/main-feature.png" alt=""/>
               	</div>
 
-              	<div id="services_contenu">
-                 	<div id="ux_design">
-                    	<div class="services_icone">
+              	<div class="services__content">
+                 	<div class="services__content_ux-design">
+                    	<div class="services__icon">
                        		<i class="fas fa-chart-line fa-2x"></i>
                        		<i class="fas fa-circle"></i>
                     	</div>
 
-                    	<div class="services_texte">
+                    	<div class="services__text">
                        		<h3>UX design</h3>
                        		<p>
                        			Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
@@ -81,13 +85,13 @@
                     	</div>
                  	</div>
 
-                 	<div id="ui_design">
-                    	<div class="services_icone">
+                 	<div class="services__content_ui-design">
+                    	<div class="services__icon">
                        		<i class="fas fa-cubes fa-2x"></i>
                        		<i class="fas fa-circle"></i>
                     	</div>
                     
-                    	<div class="services_texte">
+                    	<div class="services__text">
                        		<h3>UI design</h3>
                        		<p>
                        			Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
@@ -95,13 +99,13 @@
                     	</div>
                  	</div>
 
-                 	<div id="seo">
-                    	<div class="services_icone">
+                 	<div class="services__content_seo">
+                    	<div class="services__icon">
                        		<i class="fas fa-chart-pie fa-2x"></i>
                        		<i class="fas fa-circle"></i>
                     	</div>
 
-                    	<div class="services_texte">
+                    	<div class="services__text">
                        		<h3>SEO</h3>
                        		<p>
                        			Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
@@ -136,10 +140,10 @@
                     <a class="projets__link" href="#">
                        	<figure class="projets__figure">
                           	<img class="projets__img" src="images/portfolio/01.jpg" alt=""/>
-                        	<figcaption class="projets__figcaption">
-                            	<i class="projets__icon far fa-eye"></i>
-                            	<h4>Project Name</h4>
-                            	<p>
+                            <figcaption class="projets__figcaption">
+                                <i class="projets__icon far fa-eye"></i>
+                                <h4>Project Name</h4>
+                                <p class="projets__figcaption_text-white">
                              		Website Design
                              	</p>
                         	</figcaption>
@@ -154,7 +158,7 @@
                           	<figcaption class="projets__figcaption">
                             	<i class="projets__icon far fa-eye"></i>
                              	<h4>Project Name</h4>
-                             	<p>
+                             	<p class="projets__figcaption_text-white">
                              		Website Design
                              	</p>
                           	</figcaption>
@@ -169,7 +173,7 @@
                           	<figcaption class="projets__figcaption">
                             	<i class="projets__icon far fa-eye"></i>
                             	<h4>Project Name</h4>
-                            	<p>
+                            	<p class="projets__figcaption_text-white">
                              		Website Design
                              	</p>
                           	</figcaption>
@@ -184,7 +188,7 @@
                           	<figcaption class="projets__figcaption">
                             	<i class="projets__icon far fa-eye"></i>
                              	<h4>Project Name</h4>
-                             	<p>
+                             	<p class="projets__figcaption_text-white">
                              		Website Design
                              	</p>
                           	</figcaption>
@@ -199,7 +203,7 @@
                           	<figcaption class="projets__figcaption">
                              	<i class="projets__icon far fa-eye"></i>
                              	<h4>Project Name</h4>
-                             	<p>
+                             	<p class="projets__figcaption_text-white">
                              		Website Design
                              	</p>
                           	</figcaption>
@@ -214,7 +218,7 @@
                           	<figcaption class="projets__figcaption">
                              	<i class="projets__icon far fa-eye"></i>
                              	<h4>Project Name</h4>
-                             	<p>
+                             	<p class="projets__figcaption_text-white">
                              		Website Design
                              	</p>
                           	</figcaption>
@@ -229,7 +233,7 @@
                           	<figcaption class="projets__figcaption">
                              	<i class="projets__icon far fa-eye"></i>
                              	<h4>Project Name</h4>
-                             	<p>
+                             	<p class="projets__figcaption_text-white">
                              		Website Design
                              	</p>
                           	</figcaption>
@@ -244,7 +248,7 @@
                           	<figcaption class="projets__figcaption">
                              	<i class="projets__icon far fa-eye"></i>
                              	<h4>Project Name</h4>
-                             	<p>
+                             	<p class="projets__figcaption_text-white">
                              		Website Design
                              	</p>
                           	</figcaption>
@@ -257,30 +261,32 @@
         <!-- Section 4 Contact -->
         <section class="custom-section" id="contact">
             <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096807206!2d2.347636915630037!3d48.87305177928891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1561390890144!5m2!1sfr!2sfr" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <div class="contact__background">
+                    <iframe class="contact__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2216096807206!2d2.347636915630037!3d48.87305177928891!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1561390890144!5m2!1sfr!2sfr" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-                <div class="form">
-                 	<form method="post" action="traitement.php">
-                    	<h3>Contact Info</h3>
-                    	<p>
-                        	<p class="bold">
-                            WebAgency SAS
+                    <div class="contact__form">
+                     	<form method="post" action="traitement.php">
+                        	<h3>Contact Info</h3>
+                        	<p class="contact__text_bold">
+                                WebAgency SAS
+                            </p>
+                            <p>
+                                25 Rue d'Hauteville 75010 Paris 
+                            </p>
+                            <p>
+                            	<span class="contact__text_underline">Tél</span> : 01 02 03 04 05
                         	</p>
-                        <p>
-                            25 Rue d'Hauteville 75010 Paris 
-                        </p>
-                        	<span class="underline">Tél</span> : 01 02 03 04 05
-                    	</p>
-                    	<p>
-                        	<input class="input" type="text" name="nom" placeholder="Nom" required />
-                        	<input class="input" type="email" name="email" placeholder="Email" required />
-                        	<input class="input" type="text" name="objet" placeholder="Objet" required />
-                        	<textarea name="message" placeholder="Message" required></textarea>
-                        	<input type="submit" placeholder="Envoyer" />
-                    	</p>
-                 	</form>
+                        	<p>
+                            	<input class="input" type="text" name="nom" placeholder="Name" required/>
+                            	<input class="input" type="email" name="email" placeholder="Email" required/>
+                            	<input class="input" type="text" name="objet" placeholder="Subject" required/>
+                            	<textarea class="input" name="message" placeholder="Message" required></textarea>
+                            	<input class="button" type="submit" value="Send Message"/>
+                        	</p>
+                     	</form>
+                    </div>
                 </div>
-           	</div>   
+            </div>   
         </section>
     </body>
 </html>
