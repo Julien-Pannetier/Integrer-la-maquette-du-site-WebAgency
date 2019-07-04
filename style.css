@@ -107,6 +107,14 @@ h4 {
 	color: #ffffff;   
 }
 
+.body__text_bold {
+	font-weight: bold;
+}
+
+.body__text_underline {
+	text-decoration: underline dotted;
+}
+
 .separator {
 	position: relative;
 	width: 160px;
@@ -122,6 +130,16 @@ h4 {
 	margin-left: -10px;
 	border: 5px solid #ffffff;
 	border-radius: 50%;
+}
+
+.input
+{
+	width: 100%;
+  	padding: 10px;
+  	margin: 10px 0;
+  	border: 1px solid #777777;
+  	border-radius: 4px;
+  	box-sizing: border-box;
 }
 
 /* ==========================================================================
@@ -169,7 +187,7 @@ Bannière
 	position: relative;
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
+	max-width: 100%;
 	height: 550px;
 	overflow: hidden;
 }
@@ -177,7 +195,7 @@ Bannière
 #slider__background {
 	display: flex;
 	position: absolute;
-	width: 200%;
+	max-width: 200%;
 	height: 550px;
 	top: 0;
 	left: 0;
@@ -257,54 +275,34 @@ Nos services
 
 .services__block {
 	display: flex;
+	margin-top: 20px;
 }
 
 .services__image {
 	flex: 1;
+	text-align: center;
 }
 
-.services__content {
+.services__main-content {
 	flex: 1;
 }
 
-.services__content_ux-design {
-	display: flex;
-	margin-top: 30px;
-}
-
-.services__content_ui-design {
-	display: flex;
-	margin-top: 30px;
-}
-
-.services__content_seo {
+.services__content {
 	display: flex;
 	margin-top: 30px;
 }
 
 .services__icon {
-	width: 140px;
+	width: 70px;
 	height: 70px;
 	color: #5CADD3;
 	display: flex;
-	margin: 0px 15px;
+	margin: auto 30px;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.fa-chart-line {
-	border: 3px solid #ECECEC;
-	border-radius: 50%;
-	padding : 20px;
-}
-
-.fa-cubes {
-	border: 3px solid #ECECEC;
-	border-radius: 50%;
-	padding : 20px;
-}
-
-.fa-chart-pie {
+.main-icon {
 	border: 3px solid #ECECEC;
 	border-radius: 50%;
 	padding : 20px;
@@ -313,6 +311,7 @@ Nos services
 .fa-circle {
 	margin-left: -15px;
 	border: 5px solid #ffffff;
+	border-radius: 50%;
 }
 
 /* ==========================================================================
@@ -449,25 +448,89 @@ Contact
 	top: 50%;
 	left: 60%;
 	transform: translate(0, -50%);
-  	width: 300px;
+  	max-width: 300px;
   	background-color: rgba(242, 246, 248);
   	padding: 10px 15px;
 }
 
-.input
-{
-	width: 100%;
-  	padding: 10px;
-  	margin: 10px 0;
-  	border: 1px solid #777777;
-  	border-radius: 4px;
-  	box-sizing: border-box;
-}
+/* ==========================================================================
+Responsive design
+========================================================================== */
+@media (max-width: 767px) {
+	
+	.custom-section {
+		padding-top: 124px;
+		padding-bottom: 52px;
+	}
 
-.contact__text_bold {
-	font-weight: bold;
-}
+	.header__content {
+		display: block;
+		text-align: center;
+		justify-content: none;
+		max-width: 760px;
+		margin: auto;
+		padding: 15px 0px;
+	}
 
-.contact__text_underline {
-	text-decoration: underline dotted;
+	.logo {
+		margin-bottom: 10px;
+	}
+
+	.menu {
+		width: 80%;
+		margin: auto;
+	}
+
+	.menu__link {
+		padding-top: 5px;
+	}
+
+	.menu__link:hover {
+		color: #636363;
+		border-top: none;
+		border-bottom: 4px solid #5CADD3;
+	}
+
+	.slider__text {
+		text-align: center;
+		padding: 12%;
+	}
+
+	.services__block {
+		flex-direction: column;
+	}
+
+	.services__image_responsive {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.services__content {
+		flex-direction: column;
+		text-align: center;
+		padding: 5%;
+	}
+
+	.services__icon {
+		margin: 10px auto;
+	}
+
+	.projets__label {
+  		padding: 4px 8px;
+	}
+
+	.contact__background {
+		position: absolute;
+		width: 80%;
+		height: 600px;
+		margin: 0 10%;
+	}
+
+	.contact__form {
+		position: relative;
+		top: 0;
+		left: 0;
+		transform: none;
+		margin: 20px auto;
+	}
 }
