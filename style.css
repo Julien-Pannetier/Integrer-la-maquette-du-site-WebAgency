@@ -67,13 +67,16 @@ h4 {
 	margin: 5px 0px 2px 10px;
 }
 
-.custom-section {
-	margin: 0 auto;
-	padding-top: 92px;
+.body__text_bold {
+	font-weight: bold;
 }
 
+.body__text_underline {
+	text-decoration: underline dotted;
+}
+
+/* Boutons */
 .button {
-	
 	font-family: 'robotobold', Arial, sans-serif;
 	font-size: 1.0em;
 	color: #ffffff;
@@ -93,14 +96,7 @@ h4 {
 	color: #ffffff;
 }
 
-.body__text_bold {
-	font-weight: bold;
-}
-
-.body__text_underline {
-	text-decoration: underline dotted;
-}
-
+/* Icône de séparation */
 .separator {
 	position: relative;
 	width: 160px;
@@ -118,6 +114,7 @@ h4 {
 	border-radius: 50%;
 }
 
+/* Input */
 .input {
 	width: 100%;
 	padding: 8px;
@@ -125,6 +122,12 @@ h4 {
 	border: 1px solid #777777;
 	border-radius: 4px;
 	box-sizing: border-box;
+}
+
+/* Section */
+.custom-section {
+	margin: 0 auto;
+	padding-top: 92px;
 }
 
 /* ==========================================================================
@@ -153,6 +156,7 @@ Header
 	z-index: 998;
 }
 
+/* Menu de navigation principal */
 .menu {
 	display: flex;
 	list-style: none;
@@ -217,6 +221,7 @@ Bannière
 	margin-top: 30px;
 }
 
+/* Chevrons du slider */
 .chevron-left {
 	position: absolute;
 	width: 30px;
@@ -259,6 +264,7 @@ Bannière
 	transform: translate(0, -50%);
 }
 
+/* Barre de progression */
 .slider__progress-bar {
 	position: absolute;
 	bottom: 3px;
@@ -310,6 +316,11 @@ Nos services
 	margin-top: 30px;
 }
 
+.services__text {
+	text-align: justify;
+}
+
+/* Icônes */
 .services__icon {
 	width: 70px;
 	height: 70px;
@@ -332,10 +343,6 @@ Nos services
 	border-radius: 50%;
 }
 
-.services__text {
-	text-align: justify;
-}
-
 /* ==========================================================================
 Nos projets
 ========================================================================== */
@@ -345,6 +352,7 @@ Nos projets
 	padding-bottom: 50px;
 }
 
+/* Menu de sélection de la catégorie */
 .projets__input {
 	display: none;
 }
@@ -417,12 +425,13 @@ position: relative;
 	transform: translateX(-50%);
 }
 
-/*Selection catégorie*/	
+/* Sélection de la catégorie */	
 input#select-creative:checked ~ .projets__items li:not(.creative), input#select-corporate:checked ~ .projets__items li:not(.corporate), input#select-portfolio:checked ~ .projets__items li:not(.portfolio) 
 {
 	opacity: 0.1;
 }
 
+/* Les projets */
 .projets__items {
 	width: 80%;
 	margin: 50px auto;
@@ -893,7 +902,6 @@ Responsive design
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
 	.slider__text {
 		position: absolute;
 		width: 50%;
